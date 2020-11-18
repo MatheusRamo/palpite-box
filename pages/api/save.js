@@ -25,7 +25,6 @@ export default async(req, res) => {
     
         const sheet = doc.sheetsByIndex[1]
         const data = JSON.parse(req.body)
-        console.log(req.body)
 
         const sheetConfig = doc.sheetsByIndex[2]
         await sheetConfig.loadCells('A3:B3')
